@@ -1,0 +1,3 @@
+- name: Display environment variables
+  debug:
+    msg: "{{ lookup('env', 'http_proxy') }}, {{ lookup('env', 'https_proxy') }}"
